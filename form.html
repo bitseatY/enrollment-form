@@ -1,0 +1,187 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="formstyle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="title">Student Enrollment Forms</div>
+    </header>
+    <main>
+      <section class="student-info">
+        <div class="sec-title">Student Information</div>
+
+        <div class="student-info">
+          <div class="row">
+            <label for="student-name">Student Name : </label>
+            <input
+              type="text"
+              class="st-input"
+              id="first-name"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              class="st-input"
+              id="last-name"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+          <div class="row">
+            <div class="birth-date">
+              <label for="birth-date">Birth-Date : </label>
+
+              <input
+                type="date"
+                class="st-input"
+                id="birth-date"
+                placeholder="mm/dd/yy"
+              />
+            </div>
+            <div>
+              <label for="gender"><div>Gender :</div></label>
+              <div class="gender-options">
+                <label
+                  ><input type="radio" name="gender" value="male" />Male</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="gender"
+                    value="female"
+                  />Female</label
+                >
+              </div>
+            </div>
+          </div>
+          <div>
+            <label for="student-address">Student Address :</label>
+            <input
+              type="text"
+              class="st-input"
+              id="student-address"
+              placeholder="Full Address"
+              required
+            />
+          </div>
+          <div class="row">
+            <div>
+              <label for="student-phone-number">Phone Number: </label>
+              <input
+                type="tel"
+                id="student-phone-number"
+                class="st-input"
+                name="phone"
+                placeholder="0900000000"
+                required
+              />
+            </div>
+            <div>
+              <label for="student-email">Email: </label>
+              <input
+                type="email"
+                name="email"
+                id="student-email"
+                class="st-input"
+                placeholder="name@example.com"
+                required
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="guardian-info">
+        <div class="sec-title">Guardian Information</div>
+        <div class="guardian-info">
+          <div class="row">
+            <label for="guardian-name">Parent/Guardian Name : </label>
+            <input
+              type="text"
+              class="st-input"
+              id="guardian-name"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div class="row">
+            <div>
+              <label for="guardian-relation"> Relationship To Student : </label>
+              <input
+                type="text"
+                class="st-input"
+                id="guardian-relation"
+                placeholder="Father/Mother"
+                required
+              />
+            </div>
+            <div>
+              <label for="guardian-phone-number"> Phone Number : </label>
+              <input
+                type="tel"
+                id="guardian-phone-number"
+                class="st-input"
+                name="gphone"
+                placeholder="0900000000"
+                required
+              />
+            </div>
+            <div>
+              <label for="guardian-email"> email : </label>
+              <input
+                type="email"
+                name="gEmail"
+                id="guardian-email"
+                class="st-input"
+                placeholder="name@example.com"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="academic-info">
+        <div class="sec-title">Academic Information</div>
+        <div class="academic-info">
+          <div class="row">
+            <div>
+              <label for="grade-applying"> Grade/Program Applying For : </label>
+              <input
+                type="text"
+                name="gradeApplied"
+                id="grade-applying"
+                class="st-input"
+                placeholder="8th grade"
+              />
+            </div>
+            <div>
+              <label for="previous-school"
+                >Previous School(If Applicable) :
+              </label>
+              <input
+                type="text"
+                name="prevSchool"
+                id="previous-school"
+                class="st-input"
+                placeholder="Full Name"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="consent-info">
+        <div class="sec-title">Consent and Signature</div>
+        <div class="consent">
+          <p>
+            I confirm that all Information provided above is true to the best of
+            my knowledge.
+          </p>
+          <input type="file" name="Signature" id="sig" />
+          <p>Applicant Signature</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
